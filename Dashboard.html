@@ -43,6 +43,7 @@
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased overflow-hidden h-screen flex flex-col">
+<a class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-background-dark focus:px-4 focus:py-2 focus:rounded-lg" href="#main-content">Skip to content</a>
 <!-- Top Navigation Bar -->
 <header class="flex items-center justify-between border-b border-solid border-slate-200 dark:border-[#244730] px-6 py-3 bg-white dark:bg-background-dark z-20">
 <div class="flex items-center gap-8">
@@ -52,6 +53,11 @@
 </div>
 <h2 class="text-lg font-extrabold leading-tight tracking-tight">ZeroBite <span class="text-primary font-medium">Logistics</span></h2>
 </div>
+<nav class="hidden lg:flex items-center gap-6 text-sm font-semibold">
+<a class="text-slate-500 hover:text-primary transition-colors" href="index.html">Landing</a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="Logistic.html">Logistics Suite</a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="Dashboard.html">Dashboard</a>
+</nav>
 <div class="hidden md:flex items-center gap-1 bg-slate-100 dark:bg-[#1a3222] px-3 py-1.5 rounded-lg border border-slate-200 dark:border-[#244730]">
 <span class="material-symbols-outlined text-slate-400 dark:text-[#93c8a5] text-sm">search</span>
 <input class="bg-transparent border-none focus:ring-0 text-sm w-64 placeholder:text-slate-400 dark:placeholder:text-[#93c8a5]" placeholder="Search couriers, routes, or donors..."/>
@@ -117,7 +123,7 @@
 </div>
 </aside>
 <!-- Main Content Area -->
-<main class="flex-1 flex flex-col overflow-hidden bg-slate-50 dark:bg-[#0b140d]">
+<main class="flex-1 flex flex-col overflow-hidden bg-slate-50 dark:bg-[#0b140d]" id="main-content">
 <div class="flex-1 flex overflow-hidden">
 <!-- Map Section (Left 60%) -->
 <section class="flex-[3] relative border-r border-slate-200 dark:border-[#244730]">

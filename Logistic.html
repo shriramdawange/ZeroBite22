@@ -2,7 +2,7 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ZeroBite Logistics | Real-Time Food Rescue</title>
+<title>ZeroBite Logistics Suite | Dispatch &amp; Compliance</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -43,6 +43,7 @@
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased font-display">
+<a class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-background-dark focus:px-4 focus:py-2 focus:rounded-lg" href="#main-content">Skip to content</a>
 <!-- Navigation -->
 <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5">
 <div class="max-w-[1440px] mx-auto px-6 lg:px-12 flex h-20 items-center justify-between">
@@ -53,20 +54,21 @@
 <h2 class="text-xl font-extrabold tracking-tighter">ZeroBite<span class="text-primary text-3xl leading-none">.</span></h2>
 </div>
 <nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Solutions</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Network</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Impact</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Enterprise</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Landing</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="Logistic.html">Logistics Suite</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="Dashboard.html">Dashboard</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#workflow">Workflow</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#plans">Plans</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="hidden sm:flex text-sm font-bold px-4 py-2 hover:text-primary transition-colors">Login</button>
-<button class="bg-primary text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
-                    Request Pickup
-                </button>
+<a class="hidden sm:flex text-sm font-bold px-4 py-2 hover:text-primary transition-colors" href="Dashboard.html">Login</a>
+<a class="bg-primary text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform" href="#plans">
+                    Compare Plans
+                </a>
 </div>
 </div>
 </header>
-<main class="relative pt-20 overflow-hidden">
+<main class="relative pt-20 overflow-hidden" id="main-content">
 <!-- Hero Section -->
 <section class="relative min-h-[90vh] flex items-center">
 <!-- Background Map Visual -->
@@ -91,22 +93,22 @@
                         LIVE NETWORK: 142 ACTIVE ROUTES
                     </div>
 <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight mb-8">
-                        Real-Time Food <br/>
-<span class="text-primary">Rescue Logistics</span> <br/>
-                        at Global Scale.
+                        Logistics Suite <br/>
+<span class="text-primary">Built for Dispatch</span> <br/>
+                        &amp; Compliance.
                     </h1>
 <p class="text-lg lg:text-xl text-slate-400 max-w-xl leading-relaxed mb-10">
-                        ZeroBite leverages supply-chain intelligence to bridge the gap between corporate surplus and community needs. Optimized routing. Zero waste. Real-time impact reporting.
+                        Orchestrate pickups, temperature control, driver routing, and audit-ready reports in one operational console.
                     </p>
 <div class="flex flex-wrap gap-4">
-<button class="flex items-center gap-2 bg-primary text-background-dark px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-all">
-                            Request Pickup
+<a class="flex items-center gap-2 bg-primary text-background-dark px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-all" href="Dashboard.html">
+                            Launch Dashboard
                             <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<button class="flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 px-8 py-4 rounded-xl text-base font-bold transition-all">
-                            View Network Map
+</a>
+<a class="flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 px-8 py-4 rounded-xl text-base font-bold transition-all" href="#workflow">
+                            See Workflow
                             <span class="material-symbols-outlined">map</span>
-</button>
+</a>
 </div>
 <!-- Trust Bar -->
 <div class="mt-16 pt-8 border-t border-white/5 flex flex-col gap-4">
@@ -198,6 +200,88 @@
 </div>
 </div>
 </section>
+<!-- Workflow -->
+<section class="py-24 bg-background-dark/80" id="workflow">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-2xl">
+<p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Operational Workflow</p>
+<h2 class="text-4xl font-bold tracking-tight">From surplus alert to delivery confirmation in three steps.</h2>
+</div>
+<p class="text-slate-400 max-w-md">Configure triggers, dispatch instantly, and generate compliance-ready reports for every pickup.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Trigger &amp; Validate</h3>
+<p class="text-sm text-slate-400">API-based inventory alerts confirm food safety, pickup windows, and storage constraints.</p>
+</div>
+<div class="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined">alt_route</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Dispatch &amp; Route</h3>
+<p class="text-sm text-slate-400">AI routing assigns vehicles by volume, distance, and temperature requirements.</p>
+</div>
+<div class="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Confirm &amp; Report</h3>
+<p class="text-sm text-slate-400">Capture signatures, photos, and automated ESG reporting for stakeholders.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Plans -->
+<section class="py-24" id="plans">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-2xl">
+<p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Plans</p>
+<h2 class="text-4xl font-bold tracking-tight">Flexible deployment for regional teams or global networks.</h2>
+</div>
+<p class="text-slate-400 max-w-md">Choose the operational depth you need today and scale as your rescue footprint grows.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="rounded-2xl border border-white/10 bg-white/[0.03] p-8 flex flex-col">
+<p class="text-sm text-slate-400 font-bold uppercase tracking-widest">Launch</p>
+<p class="text-3xl font-extrabold mt-4">Starter</p>
+<p class="text-sm text-slate-400 mt-2">Ideal for a single metro area and up to 10 vehicles.</p>
+<ul class="mt-6 space-y-3 text-sm text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Live dispatch board</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Basic compliance reports</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Email support</li>
+</ul>
+<a class="mt-8 bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl text-center" href="mailto:ops@zerobite.com">Get Started</a>
+</div>
+<div class="rounded-2xl border border-primary/40 bg-primary/10 p-8 flex flex-col">
+<p class="text-sm text-primary font-bold uppercase tracking-widest">Scale</p>
+<p class="text-3xl font-extrabold mt-4">Growth</p>
+<p class="text-sm text-slate-300 mt-2">For multi-region networks with advanced routing needs.</p>
+<ul class="mt-6 space-y-3 text-sm text-slate-100">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Dynamic route optimization</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Cold chain monitoring</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Dedicated success manager</li>
+</ul>
+<a class="mt-8 bg-primary text-background-dark font-bold py-3 rounded-xl text-center hover:scale-[1.01] transition-transform" href="mailto:ops@zerobite.com">Request Demo</a>
+</div>
+<div class="rounded-2xl border border-white/10 bg-white/[0.03] p-8 flex flex-col">
+<p class="text-sm text-slate-400 font-bold uppercase tracking-widest">Enterprise</p>
+<p class="text-3xl font-extrabold mt-4">Global</p>
+<p class="text-sm text-slate-400 mt-2">Custom workflows, SLA commitments, and SOC2 reporting.</p>
+<ul class="mt-6 space-y-3 text-sm text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Custom integrations</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>24/7 operations center</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Enterprise compliance packs</li>
+</ul>
+<a class="mt-8 bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl text-center" href="mailto:partnerships@zerobite.com">Talk to Sales</a>
+</div>
+</div>
+</div>
+</section>
 </main>
 <!-- Footer -->
 <footer class="border-t border-white/5 py-16 bg-background-dark/80">
@@ -225,15 +309,15 @@
 <div class="grid grid-cols-2 md:grid-cols-3 gap-12 lg:gap-24">
 <div class="flex flex-col gap-4">
 <p class="font-bold text-sm uppercase tracking-widest text-slate-500">Platform</p>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Logistics Engine</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Compliance</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Impact Dash</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="Logistic.html">Logistics Suite</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="Dashboard.html">Impact Dashboard</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#workflow">Workflow</a>
 </div>
 <div class="flex flex-col gap-4">
 <p class="font-bold text-sm uppercase tracking-widest text-slate-500">Company</p>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Our Network</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Careers</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Contact</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="index.html">Landing</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#plans">Plans</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="mailto:ops@zerobite.com">Contact</a>
 </div>
 <div class="flex flex-col gap-4">
 <p class="font-bold text-sm uppercase tracking-widest text-slate-500">Legal</p>
