@@ -44,6 +44,7 @@
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased font-display">
+<a class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-background-dark focus:px-4 focus:py-2 focus:rounded-lg" href="#main-content">Skip to content</a>
 <!-- Navigation -->
 <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5">
 <div class="max-w-[1440px] mx-auto px-6 lg:px-12 flex h-20 items-center justify-between">
@@ -54,20 +55,21 @@
 <h2 class="text-xl font-extrabold tracking-tighter">ZeroBite<span class="text-primary text-3xl leading-none">.</span></h2>
 </div>
 <nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Solutions</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Network</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Impact</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Enterprise</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Landing</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="Logistic.html">Logistics Suite</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="Dashboard.html">Dashboard</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#impact">Impact</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
 </nav>
 <div class="flex items-center gap-4">
-<button class="hidden sm:flex text-sm font-bold px-4 py-2 hover:text-primary transition-colors">Login</button>
-<button class="bg-primary text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+<a class="hidden sm:flex text-sm font-bold px-4 py-2 hover:text-primary transition-colors" href="Dashboard.html">Login</a>
+<a class="bg-primary text-background-dark px-6 py-2.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform" href="#contact">
                     Request Pickup
-                </button>
+                </a>
 </div>
 </div>
 </header>
-<main class="relative pt-20 overflow-hidden">
+<main class="relative pt-20 overflow-hidden" id="main-content">
 <!-- Hero Section -->
 <section class="relative min-h-[90vh] flex items-center">
 <!-- Background Map Visual -->
@@ -100,14 +102,14 @@
                         ZeroBite leverages supply-chain intelligence to bridge the gap between corporate surplus and community needs. Optimized routing. Zero waste. Real-time impact reporting.
                     </p>
 <div class="flex flex-wrap gap-4">
-<button class="flex items-center gap-2 bg-primary text-background-dark px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-all">
+<a class="flex items-center gap-2 bg-primary text-background-dark px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-all" href="#contact">
                             Request Pickup
                             <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<button class="flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 px-8 py-4 rounded-xl text-base font-bold transition-all">
-                            View Network Map
+</a>
+<a class="flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 px-8 py-4 rounded-xl text-base font-bold transition-all" href="Dashboard.html">
+                            View Live Dashboard
                             <span class="material-symbols-outlined">map</span>
-</button>
+</a>
 </div>
 <!-- Trust Bar -->
 <div class="mt-16 pt-8 border-t border-white/5 flex flex-col gap-4">
@@ -123,7 +125,7 @@
 </div>
 </section>
 <!-- Stats Section -->
-<section class="py-20 relative z-10 bg-background-dark/50 border-y border-white/5">
+<section class="py-20 relative z-10 bg-background-dark/50 border-y border-white/5" id="impact">
 <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <div class="flex flex-col gap-3 rounded-2xl p-8 border border-white/5 bg-white/[0.02]">
@@ -199,6 +201,54 @@
 </div>
 </div>
 </section>
+<!-- Request Pickup -->
+<section class="py-24 bg-background-dark/80" id="contact">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+<div>
+<p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Request Pickup</p>
+<h2 class="text-4xl font-bold tracking-tight mb-4">Connect surplus food to communities in under 60 minutes.</h2>
+<p class="text-slate-400 max-w-lg mb-8">Share your pickup details and our operations team will coordinate routing, temperature control, and compliance documentation.</p>
+<div class="space-y-4 text-sm text-slate-300">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>+1 (415) 555-0138 • 24/7 Dispatch</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>ops@zerobite.com</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span>Average pickup confirmation: 12 minutes</span>
+</div>
+</div>
+</div>
+<form class="bg-white/[0.03] border border-white/10 rounded-2xl p-8 space-y-6">
+<div>
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400" for="org">Organization</label>
+<input class="mt-2 w-full rounded-lg border border-white/10 bg-background-dark/80 text-white px-4 py-3 text-sm focus:border-primary focus:ring-primary" id="org" placeholder="Grocery, hotel, or distribution center"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400" for="contact-name">Contact Name</label>
+<input class="mt-2 w-full rounded-lg border border-white/10 bg-background-dark/80 text-white px-4 py-3 text-sm focus:border-primary focus:ring-primary" id="contact-name" placeholder="Jordan Lee"/>
+</div>
+<div>
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400" for="contact-email">Email</label>
+<input class="mt-2 w-full rounded-lg border border-white/10 bg-background-dark/80 text-white px-4 py-3 text-sm focus:border-primary focus:ring-primary" id="contact-email" placeholder="jordan@company.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400" for="pickup-details">Pickup Details</label>
+<textarea class="mt-2 w-full rounded-lg border border-white/10 bg-background-dark/80 text-white px-4 py-3 text-sm focus:border-primary focus:ring-primary" id="pickup-details" placeholder="Approximate volume, temperature requirements, and time window." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-background-dark font-bold py-3 rounded-xl hover:scale-[1.01] transition-transform" type="button">Submit Request</button>
+<p class="text-xs text-slate-500">By submitting, you agree to our logistics safety and compliance guidelines.</p>
+</form>
+</div>
+</div>
+</section>
 </main>
 <!-- Footer -->
 <footer class="border-t border-white/5 py-16 bg-background-dark/80">
@@ -226,15 +276,15 @@
 <div class="grid grid-cols-2 md:grid-cols-3 gap-12 lg:gap-24">
 <div class="flex flex-col gap-4">
 <p class="font-bold text-sm uppercase tracking-widest text-slate-500">Platform</p>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Logistics Engine</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Compliance</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Impact Dash</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="Logistic.html">Logistics Suite</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="Dashboard.html">Impact Dashboard</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#impact">Impact Metrics</a>
 </div>
 <div class="flex flex-col gap-4">
 <p class="font-bold text-sm uppercase tracking-widest text-slate-500">Company</p>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Our Network</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Careers</a>
-<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Contact</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="index.html">Landing</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#contact">Contact</a>
+<a class="text-slate-400 hover:text-primary transition-colors text-sm" href="mailto:ops@zerobite.com">Email Operations</a>
 </div>
 <div class="flex flex-col gap-4">
 <p class="font-bold text-sm uppercase tracking-widest text-slate-500">Legal</p>
